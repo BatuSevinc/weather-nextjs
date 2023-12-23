@@ -16,10 +16,10 @@ const Cards = ({allForecastsAt12Hour}) => {
       <div className='flex justify-center relative'>
         <Image
           src={`http://openweathermap.org/img/wn/${forecastsAt12Hour.weather[0].icon}@2x.png`}
-          alt='/'
+          alt='weather icon'
           width='140'
           height='140'
-          className='z-10 p-2 m-2 rounded-full'
+          className='z-10 ml-4 p-2 m-2 rounded-full'
           priority={true}
           placeholder='empty'
           loading="eager"
@@ -64,6 +64,7 @@ const Cards = ({allForecastsAt12Hour}) => {
         </p>
       </div>
     }
+    <div className='absolute top-1 right-3 text-[11px] text-white'>12:00</div>
   </div>
 ))}
 </div>
