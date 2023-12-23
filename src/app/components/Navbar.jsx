@@ -1,19 +1,11 @@
 import Link from 'next/link';
 import { Datas, IoArrowBack } from '../helpers';
 import { useCity } from '../context';
-import { useRouter } from 'next/navigation';
 
 const Navbar = ({weather,selectedCity}) => {
 
   const { setCity } = useCity();
-  const router = useRouter();
 
-  const handleCityChange = (e) => {
-    const newCity = e.target.value;
-    setCity(newCity);
-    router.push(`/city/${encodeURIComponent(newCity)}`);
-    
-  };
   if(!weather) {
    return
   }
@@ -26,7 +18,7 @@ const Navbar = ({weather,selectedCity}) => {
           <IoArrowBack size={18}/> Geri Dön
         </div>
       </Link>
-      <select className='bg-inherit text-white font-semibold' name='citySelector' value={selectedCity.name || selectedCity} onChange={handleCityChange}>
+      <select className='bg-inherit text-white font-semibold' name='citySelector' value={selectedCity.name || selectedCity} onChange={(e) => setCity(e.target.value)}>
         {Datas &&
           Datas.map((data, index) => (
             <option key={index} value={data.name}>
