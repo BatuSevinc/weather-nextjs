@@ -21,6 +21,8 @@ const Cards = ({allForecastsAt12Hour}) => {
           height='140'
           className='z-10 p-2 m-2 rounded-full'
           priority={true}
+          placeholder='empty'
+          loading="eager"
         />
       </div>
     )}
