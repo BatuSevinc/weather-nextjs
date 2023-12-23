@@ -1,4 +1,5 @@
-Bu proje next.js kullanılarak Batuhan Sevinç tarafından Türkiye'nin 81 ilinin hava durumu projesi olarak yapılmıştır.
+## Türkiye İlleri Hava Durumu Projesi
+Bu proje, Batuhan Sevinç tarafından Türkiye'nin 81 ilinin hava durumunu gösteren bir web uygulaması olarak Next.js kullanılarak geliştirilmiştir.
 
 Canlı Demo : https://batusevinc-weather.netlify.app/
 
@@ -10,9 +11,9 @@ Canlı Demo : https://batusevinc-weather.netlify.app/
 
 ### PROJE HAKKINDA
 
- - Proje next.js ile hava durumu uygulaması olarak yapılmıştır.
- - Kullanıcıyı anasayfada Türkiye haritası karşılıyor ve kullanıcı istediği şehrin üzerine tıklayarak günlük ve haftalık hava durumu değerini görebiliyor.
- - Şehirlerin özel sayfasında da şehirler arası geçiş mevcut.
+ - Bu proje, Next.js kullanılarak geliştirilmiş bir hava durumu uygulamasıdır.
+ - Anasayfa, Türkiye haritasını kullanıcıya sunar ve kullanıcı istediği şehrin üzerine tıklayarak günlük ve haftalık hava durumu bilgilerini görüntüleyebilir.
+ - Her şehir için özel sayfa bulunmaktadır, bu sayfada şehirler arası geçiş yapılabilmektedir.
 
  #### KULLANILAN PAKETLER
 
